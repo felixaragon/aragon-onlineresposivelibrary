@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@500&family=Roboto:wght@900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    /* border: 2px salmon solid; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+
+}
+
+.fixed-header {
+    position: fixed;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo{
+
+    
+    font-size: 40px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(10, 13, 228);
+    
+    
+}
+.searchbox {
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+nav {
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+    margin-top: 50px;
+    height: 30px;
+    background-color: rgb(124, 9, 231);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+nav a {
+    justify-content: center;
+    
+}
+
+.navlist-item a {
+    color: aliceblue;
+    
+}
+    
+
+ .forms {
+    position: absolute;
+    width: 80%;
+    height: 500px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form {
+    border: 1px solid red;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+.input-group {
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+
+
+footer {
+    position: fixed;
+    height: 35px;
+    width: inherit;
+    background-color: rgb(77, 4, 4);
+    margin-top: 85vh;
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .fixed-header { 
+        flex-direction: column;
+        background-color: white;
+        
+    }
+    nav {
+        top: 6%;
+    }
+    
+
+}
+@media (max-width: 1000px) {
+    .fixed-header { 
+        flex-direction: column;
+        background-color: white;
+    }
+    nav {
+        top: 7%;
+    }
+}
+
+@media (max-width: 800px) {
+    .fixed-header {
+        flex-direction: column;
+        flex: auto;
+        background-color: white;
+    }
+
+
+    
+}
+
+@media (max-width: 600px) {
+    .fixed-header {
+        flex-direction: column;
+        flex: auto;
+        background-color: white;
+    }
+
+
+    
+    nav {
+        top: 8%;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+

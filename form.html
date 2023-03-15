@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/833028dc4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/form-style.css">
+    <title>Responsive Online Library</title>
+</head>
+<body>
+    <section class="fixed-header">
+            <div class="logo"><i class="fa-solid fa-book-open-reader"></i>
+            <span class="project">ONLINE LIBRARY </span>
+            </div>
+
+            <div class="searchbox"><input type="text" name="search" id="search" size="25px">
+                <select id="books" name="books">
+                    <option disabled selected>Please select here</option>
+                    <option value="Romantic">ROMANTIC</option>
+                    <option value="Adventure">ADVENTURE</option>
+                    <option value="Sci-fi">SCIENCE FICTION</option>
+                    <option value="Horor">HOROR</option>
+                    <option value="Crime-suspense">CRIME SUSPENSE</option>
+                </select><button>SEARCH</button></div>    
+    </section>
+    <nav>
+        <div class="navlist-item"><a href="#">HOME</a></div>
+        <div class="navlist-item"><a href="#">PRODUCTS</a></div>
+        <div class="navlist-item"><a href="#">CHECK OUT FORM</a></div>
+        <div class="navlist-item"><a href="#">CONTACT US</a></div>
+    </nav>
+    
+    
+    <div class="forms">
+        <form>
+            <div class="row1">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">   
+                    <input type="text" id="number" required>
+                    <label for="number">Phone No.</label>
+                </div>
+                <div class="payment">
+                    <input type="radio" id="cashonDelivery" name="Payment" value="CASHONDELIVERY">
+                    <label for="cashonDelivery">Cash on Delivery</label><br>
+                    <input type="radio" id="masterCard" name="Payment" value="MASTERCARD">
+                    <label for="masterCard">Master Card</label><br>
+                    <input type="radio" id="visa" name="Payment" value="VISA">
+                    <label for="visa">Visa</label><br>
+                    <input type="radio" id="americanExpress" name="Payment" value="AMERICANEXPRESS">
+                    <label for="americanExpress">American Express</label><br>
+                    <input type="button" value="Place Order">
+                </div>
+            </div>
+            <div>    
+                <input type="text" id="email" required>
+                <label for="email">Email id</label>
+            </div>
+            <div>    
+                <textarea id="message" rows="8"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>   
+        </form>
+    </div>
+
+
+
+   
+    <footer>ALL RIGHTS RESERVED / COPY RIGHTS 2023</footer>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@500&family=Roboto:wght@900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+
+    /* border: 2px salmon solid; */
+    margin: auto;
+    display: flex;
+    width: 80%;
+}
+
+.fixed-header {
+    position: fixed;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo{
+    font-size: 35px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(10, 13, 228);
+}
+.searchbox {
+    justify-content: space-between;
+    padding: 10px;
+}
+nav {
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+    margin-top: 50px;
+    height: 30px;
+    background-color: rgb(124, 9, 231);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+nav a {
+    justify-content: center;
+}
+.navlist-item a {
+    color: aliceblue;
+}
+    
+content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis:content;
+    margin-top: 81px;
+    margin-bottom: 50px;
+    padding: 15px;
+    height: 100%;
+    background-color: bisque;
+    
+}
+.book1 {
+
+    display: flex;
+    height: 300px;
+    width: 450px;
+    margin: 20px;   
+}
+.book2 {
+
+    display: flex;
+    height: 300px;
+    width: 450px;
+    margin: 20px;   
+}
+
+.book3 {
+
+    display: flex;
+    height: 300px;
+    width: 450px;
+    margin: 20px;   
+}
+
+.book4 {
+
+    display: flex;
+    height: 300px;
+    width: 450px;
+    margin: 20px;   
+}
+
+img {
+    height: 300px;
+    width: 200px;
+    padding: px;
+    border-radius:20px 0 0 20px;
+}
+
+.book-details {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(87,80,61);
+    border-radius: 0 15px 15px 0;
+
+}
+
+.title {
+    padding: 10px;
+    display: block;
+    font-size: 30px;
+    color: rgb(234,234,196);
+    text-align: center;
+}
+
+.author {
+    color: rgb(234,234,196);
+    text-align: center;
+    display: block;
+    font-size: 18px;
+}
+
+.description {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 10px 0 10px ;
+    color: bisque;
+}
+
+.price { 
+    size: 10px;
+    color: rgb(234,234,196);
+    display: block;
+    text-align: center;
+
+}
+.icon-buttons {
+    padding-top: 6px;
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-buttons, .add-wishlist i{
+    color: gray;
+    transition: width 2s, height 4s;;
+   
+} 
+.add-to-wishlist i:hover {
+    width: 10px;
+    height: 10px;
+    
+}
+.add-to-wishlist i:after {
+    transform: ;
+    color: red;
+}
+
+
+.add-to-basket i:hover {
+  width: 10px;
+  height: 10px;
+}
+
+.buy-button button{
+    background-color: orange;
+    color: rgba(93, 17, 194, 0.726);
+
+}
+
+footer {
+    position: fixed;
+    height: 35px;
+    width: inherit;
+    background-color: rgb(77, 4, 4);
+    margin-top: 85vh;
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1100px) {
+    .fixed-header { 
+        
+        background-color: white;
+    }
+    nav {
+        top: %;
+
+    }
+    content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:content;
+        margin-top: 80px;
+        /* margin-bottom: 50px; */
+        padding: px;
+        height: 100%;
+        background-color: bisque;
+    }
+
+} 
+@media (max-width: 1000px) {
+    .fixed-header { 
+        flex-direction: column;
+        background-color: white;
+    }
+    nav {
+        top: 7%;
+    }
+    content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:content;
+        margin-top: 110px;
+        /* margin-bottom: 50px; */
+        padding: 25px;
+        height: 100%;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 800px) {
+    .fixed-header {
+        flex-direction: column;
+        flex: auto;
+        background-color: white;
+    }
+    nav {
+        top: 7%;
+    }
+
+    content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:content;
+        margin-top: 110px;
+        /* margin-bottom: 50px; */
+        padding: 25px;
+        height: 100%;
+        background-color: bisque;
+    }
+}
+
+@media (max-width: 600px) {
+    .fixed-header {
+        flex-direction: column;
+        flex: auto;
+        background-color: white;
+    }
+
+
+    content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis:content;
+        margin-top: 160px;
+        /* margin-bottom: 50px; */
+        padding: 25px;
+        height: 100%;
+        background-color: bisque;
+    }
+    nav {
+        top: 7%;
+        flex-direction: column;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
