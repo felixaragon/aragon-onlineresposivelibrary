@@ -58,6 +58,7 @@ content {
     justify-content: center;
     flex-wrap: wrap;
     flex-basis:content;
+    justify-content: center;
     margin-top: 81px;
     margin-bottom: 50px;
     padding: 20px;
@@ -180,7 +181,7 @@ footer {
     height: 35px;
     width: inherit;
     background-color: rgb(77, 4, 4);
-    margin-top: 95vh;
+    margin-top: 80vh;
     color: white;
     text-align: center;
     align-content: center;
@@ -207,7 +208,18 @@ footer {
         height: 100%;
         background-color: bisque;
     }
-
+    footer {
+        position: fixed;
+        height: 35px;
+        width: inherit;
+        background-color: rgb(77, 4, 4);
+        margin-top: 95vh;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
 } 
 @media (max-width: 1000px) {
     .fixed-header { 
@@ -215,7 +227,7 @@ footer {
         background-color: white;
     }
     nav {
-        top: 7%;
+        top: 5%;
     }
     content {
         display: flex;
@@ -226,6 +238,18 @@ footer {
         padding: 25px;
         height: 100%;
         background-color: bisque;
+    }
+    footer {
+        position: fixed;
+        height: 35px;
+        width: inherit;
+        background-color: rgb(77, 4, 4);
+        margin-top: 95vh;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -236,7 +260,7 @@ footer {
         background-color: white;
     }
     nav {
-        top: 7%;
+        top: 5%;
     }
 
     content {
@@ -248,6 +272,18 @@ footer {
         padding: 25px;
         height: 100%;
         background-color: bisque;
+    }
+    footer {
+        position: fixed;
+        height: 35px;
+        width: inherit;
+        background-color: rgb(77, 4, 4);
+        margin-top: 95vh;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -270,9 +306,21 @@ footer {
         background-color: bisque;
     }
     nav {
-        top: 7%;
+        top: 5%;
         flex-direction: column;
         height: 100px;
+    }
+    footer {
+        position: fixed;
+        height: 35px;
+        width: inherit;
+        background-color: rgb(77, 4, 4);
+        margin-top: 95vh;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 }
 
